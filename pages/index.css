@@ -1,3 +1,58 @@
-.textColor{
-    color: red;
+div {
+    background-size: cover;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.logo {
+    height: 70px;
+    float: left;
+    background-color: green;
+}
+
+.pic{
+    height: 70px;
+}
+
+.page-container{
+    width: auto;
+    font-size: 40px;
+    height: 80px;
+    padding-right: 10px;
+    z-index: 900;
+    box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.1);
+    position: relative;
+}
+
+.page-container ul {
+    width: 500px;
+    display: inline;
+    height: 200px;
+    margin-left: 50px;
+}
+
+.page-container li {
+    width: 100px;
+    text-decoration: none;  /*去掉前面的圆点*/
+    list-style: none;
+    display: inline;
+    margin: 10px;
+    border: 1px solid #FFFFFF;
+    background-color: #30DDEB;
+}
+
+.page-container li a {
+    color: #4D555D !important;
+}
+
+.page-container input{
+    width: 500px;
+    margin-left: 100px;
+}
+
+.page-container input{
+    font-size: 40px;
 }
