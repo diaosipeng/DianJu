@@ -17,7 +17,7 @@ li {
     height: 70px;
 }
 
-.page-container{
+.navigator{
     width: auto;
     font-size: 40px;
     height: 80px;
@@ -27,14 +27,14 @@ li {
     position: relative;
 }
 
-.page-container ul {
+.navigator ul {
     width: 500px;
     display: inline;
     height: 200px;
     margin-left: 50px;
 }
 
-.page-container li {
+.navigator li {
     width: 100px;
     text-decoration: none;  /*去掉前面的圆点*/
     list-style: none;
@@ -44,15 +44,15 @@ li {
     background-color: #30DDEB;
 }
 
-.page-container li a {
+.navigator li a {
     color: #4D555D !important;
 }
 
-.page-container input{
+.navigator input{
     width: 500px;
     margin-left: 100px;
 }
 
-.page-container input{
+.navigator input{
     font-size: 40px;
 }
