@@ -56,3 +56,85 @@ li {
 .navigator input{
     font-size: 40px;
 }
+
+
+
+/*##########*/
+/*##########*/
+#news {
+    float:right;
+}
+
+#topik {
+    height: 24px;
+    width: 502px;;
+    position: relative;
+}
+#topik ul {
+    list-style-type: none;
+    width: 502px;
+    height: 24px;;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+
+#topik ul li {
+    float: left;
+    margin:0px;
+    padding: 0px;
+}
+
+#topik ul li button {
+    background-color: yellow;
+}
+
+#topik ul .center_topik {
+    margin-left: 178px;
+    margin-right: 178px;
+}
+
+#jiaju {
+    display:none;
+}
+
+#house {
+}
+
+#second_home {
+    display:none;
+}
+
+#select_card {
+    height: 125px;
+    width: 500px;
+    position: relative;
+    border-top: 1px solid blue ;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+    border-bottom: 1px solid blue;
+    background-color:#EDF1F2;
+}
+
+#select_card ul {
+    height: 125px;
+    width: 502px;
+    padding: 0px;
+    margin-top:1px;
+    list-style-type:none;
+    position: absolute;
+    top:1px;
+}
+
+#select_card ul li {
+    height: 30px;
+    width: 502px;
+    margin-top: 0.6px;
+    margin-bottom: 0.6px;
+}
+
+#select_card ul li div {
+    height: 30px;
+}
