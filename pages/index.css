@@ -1,6 +1,8 @@
-div {
-    background-size: cover;
+#body_page{
+    width: auto;
+    height: 1000px;
 }
+
 
 li {
     display: list-item;
@@ -8,33 +10,39 @@ li {
 }
 
 .logo {
-    height: 70px;
-    float: left;
-    background-color: green;
+    height: 100%;
+    position: absolute;
+    left:0;
 }
 
 .pic{
-    height: 70px;
+    height: 100%;
 }
 
 .navigator{
     width: auto;
-    font-size: 40px;
-    height: 80px;
+    height: 70px;
+    font-size: 30px;
     padding-right: 10px;
     z-index: 900;
-    box-shadow: 0 4px 8px 0 rgba(7, 17, 27, 0.1);
+    box-shadow: 0 4px 8px 0 black;
     position: relative;
 }
 
-.navigator ul {
-    width: 500px;
+.navigator .nav_part1 {
+    position:absolute;
+    top:20%;
     display: inline;
-    height: 200px;
-    margin-left: 50px;
+    left: 6%;
 }
 
-.navigator li {
+.navigator .nav_part2{
+    position:absolute;
+    top:20%;
+    right:2%;
+}
+
+.navigator  ul li {
     width: 100px;
     text-decoration: none;  /*去掉前面的圆点*/
     list-style: none;
@@ -49,12 +57,32 @@ li {
 }
 
 .navigator input{
-    width: 500px;
-    margin-left: 100px;
+    position:absolute;
+    top:5px;
+    width: 22%;
+    left: 35%;
+    font-size: 35px;
 }
 
-.navigator input{
-    font-size: 40px;
+.navigator .find {
+    position:absolute;
+    top:8%;
+    display: inline;
+    width:2.7%;
+    height:72%;
+    left: 58%;
+    border: 1px solid #FFFFFF;
+    background-color: #30DDEB;
+}
+
+.navigator .find a {
+    width:100%;
+    height:100%;
+}
+
+.navigator .find img {
+    width:100%;
+    height:100%;
 }
 
 
@@ -62,13 +90,18 @@ li {
 /*##########*/
 /*##########*/
 #news {
-    float:right;
+    width: 26.1%;
+    height: 151px;
+    float: right;
+    position: relative;
+    right:13.35%;
+    top:4.5%;
+
 }
 
 #topik {
-    height: 24px;
-    width: 502px;;
-    position: relative;
+    height: 16%;
+    width: 100%;
 }
 #topik ul {
     list-style-type: none;
@@ -108,8 +141,8 @@ li {
 }
 
 #select_card {
-    height: 125px;
-    width: 500px;
+    height: 82.7%;
+    width: 99%;
     position: relative;
     border-top: 1px solid blue ;
     border-left: 1px solid blue;
@@ -119,9 +152,8 @@ li {
 }
 
 #select_card ul {
-    height: 125px;
-    width: 502px;
-    padding: 0px;
+    height: 100%;
+    width: 100%;
     margin-top:1px;
     list-style-type:none;
     position: absolute;
@@ -129,12 +161,181 @@ li {
 }
 
 #select_card ul li {
-    height: 30px;
-    width: 502px;
+    height: 25%;
+    width: 100%;
     margin-top: 0.6px;
     margin-bottom: 0.6px;
 }
 
 #select_card ul li div {
-    height: 30px;
+    height: 100%;
+}
+
+/*############*/
+/*############*/
+
+#community {
+    height: 65%;
+    width: 26%;;
+    position: relative;
+    top:20%;
+    left:60.5%;
+
+}
+#community .test {
+    height: 90%;
+}
+#community_news{
+    width: 100%;
+    height: 5%;
+    box-shadow: 0 0 2px 0 black;
+}
+#community div img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*############*/
+/*############*/
+* {padding: 0;margin: 0;font-family: "微软雅黑";}
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.box{
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    bottom: 20%;
+    left:15%;
+}
+.box-1 ul li{
+    width: 800px;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+.box-1 ul li img{
+    display:block;
+    width: 800px;
+    height: 600px;
+}
+.box-1 ul li h2{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40px;
+    width:300px;
+    background: rgba(125,125,120,.4);
+    text-indent: 2em;
+    padding-right:500px ;font-size: 15px;line-height: 40px;text-overflow: ellipsis;overflow: hidden;
+    white-space: nowrap;font-weight: normal;color: ghostwhite
+}
+.box-2{
+    position: absolute;
+    right: 10px;
+    bottom: 14px;
+}
+.box-2 ul li{
+    float:left;
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    margin: 0 5px;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.5);text-indent: 100px;cursor: pointer;
+}
+.box-2 ul .on{
+    background: rgba(255,255,255,0.6);
+}
+.box-3 span{
+    position: absolute;
+    color: white;
+    background: rgba(125,125,120,.3);
+    width: 50px;height: 80px;
+    top:50%; font-family: "宋体";line-height: 80px;font-size:60px;margin-top: -40px;
+    text-align: center;cursor: pointer;
+}
+.box-3 .prev{
+    left: 10px;
+}
+.box-3 .next{
+    right: 10px;
+}
+.box-3 span::selection{
+    background: transparent;
+}
+.box-3 span:hover{
+    background: rgba(125,125,120,.8);
+}
+
+
+/*##########*/
+/*##########*/
+
+#footer{
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+    background-color: #F6F9FA;
+    position: relative;
+    top:35%;
+}
+#footer .footer_nav{
+    position: absolute;
+    top: 9%;
+    left:15%;
+    width: 70%;
+}
+
+#footer a {
+    margin: 0% 1.3%;
+}
+
+#footer .wechat{
+    display: block;
+    width: 3.6%;
+    height: 44%;
+    float:right;
+    position: absolute;
+    right: 23.5%;
+    top:25%;
+}
+#footer .wechat img {
+    width: 100%;
+    height: 70%;
+    position: relative;
+    left: 9%;
+}
+#footer .wechat p{
+    width: 130%;
+}
+#footer .wechat a {
+    height: 100%;
+    width: 100%;
+}
+#footer .sina{
+    display: block;
+    width: 3.6%;
+    height: 44%;
+    position: absolute;
+    right: 15.3%;
+    top:25%;
+}
+#footer .sina img {
+    width: 100%;
+    height: 70%;
+    position: relative;
+    left: 5%;
+}
+footer .sina p {
+    width:100%;
+}
+#footer .sina a {
+    height: 100%;
+    width: 100%;
 }
